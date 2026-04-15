@@ -118,5 +118,5 @@ Vibe coding style - Red & Black theme with JetBrains Mono font.
 ---
 
 <div align="center">
-  <p>Built with ❤️ using Express + MongoDB + EJS</p>
+  <p>Built with using Express + MongoDB + EJS</p>
 </div>
