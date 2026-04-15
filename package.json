@@ -1,0 +1,16 @@
+{
+  "name": "tp-crud-ejs",
+  "version": "1.0.0",
+  "description": "CRUD application with Express.js, MongoDB and EJS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.0.0"
+  }
+}

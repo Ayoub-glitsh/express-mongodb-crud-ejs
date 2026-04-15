@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter un Produit</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: #0a0a0a;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #e5e5e5;
+    }
+    .container {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      color: #ff3333;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 30px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #666;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    input {
+      width: 100%;
+      padding: 14px 16px;
+      background: #0a0a0a;
+      border: 1px solid #333;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: 'JetBrains Mono', monospace;
+      transition: all 0.2s ease;
+    }
+    input:focus {
+      outline: none;
+      border-color: #ff3333;
+      box-shadow: 0 0 10px rgba(255, 51, 51, 0.2);
+    }
+    input::placeholder {
+      color: #444;
+    }
+    .errors-list {
+      background: rgba(255, 51, 51, 0.1);
+      border: 1px solid #ff3333;
+      color: #ff3333;
+      padding: 14px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+    }
+    .errors-list ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-submit {
+      background: #ff3333;
+      color: #0a0a0a;
+    }
+    .btn-submit:hover {
+      background: #cc0000;
+      box-shadow: 0 0 20px rgba(255, 51, 51, 0.4);
+    }
+    .btn-back {
+      display: block;
+      text-align: center;
+      background: transparent;
+      color: #666;
+      text-decoration: none;
+      margin-top: 12px;
+      padding: 14px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    .btn-back:hover {
+      border-color: #ff3333;
+      color: #ff3333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>New Product</h1>
+    </div>
+    
+    <div class="card">
+      <% if (errors && errors.length > 0) { %>
+        <div class="errors-list">
+          <ul>
+            <% errors.forEach(error => { %>
+              <li><%= error %></li>
+            <% }) %>
+          </ul>
+        </div>
+      <% } %>
+      
+      <form action="/add" method="POST">
+        <div class="form-group">
+          <label for="name">Product Name</label>
+          <input type="text" id="name" name="name" value="<%= product ? product.name : '' %>" placeholder="enter product name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="price">Price (€)</label>
+          <input type="number" id="price" name="price" step="0.01" min="0" value="<%= product ? product.price : '' %>" placeholder="0.00" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity" min="0" value="<%= product ? product.quantity : '' %>" placeholder="0" required>
+        </div>
+        
+        <button type="submit" class="btn btn-submit">+ Add Product</button>
+        <a href="/" class="btn btn-back">← Back to List</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
