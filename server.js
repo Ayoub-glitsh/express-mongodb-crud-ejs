@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -18,7 +19,7 @@ mongoose.connect(MONGODB_URI)
 
 // Configuration d'EJS comme moteur de template
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
+app.set('views', path.join(__dirname, 'views'));
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -36,7 +37,7 @@ app.get('/', async (req, res) => {
     res.render('index', { products });
   } catch (err) {
     console.error(err);
-    res.redirect('/');
+    res.status(500).send('Erreur de serveur/base de données : ' + err.message);
   }
 });
 
