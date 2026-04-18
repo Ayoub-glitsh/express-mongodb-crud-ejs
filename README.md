@@ -20,7 +20,7 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/USERNAME/REPO/main/assets/demo.png" width="300"/>
+  <img src="https://res.cloudinary.com/dqgsl5uu4/image/upload/f_auto,q_auto/Capture_d_écran_2026-04-18_190239_xyve7i" width="500" />
 </p>
 
 ---
