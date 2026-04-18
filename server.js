@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -5,10 +6,13 @@ const methodOverride = require('method-override');
 const Product = require('./models/Product');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
+// URL de connexion à MongoDB Atlas (par défaut) ou variable d'environnement
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://ayoubaguezardev_db_user:ByMjPenJXFAit6i5@cluster0.hrdgbxs.mongodb.net/tpcrud?retryWrites=true&w=majority&appName=Cluster0';
 
 // Connexion à MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/tpcrud')
+mongoose.connect(MONGODB_URI)
   .then(() => console.log('Connexion à MongoDB réussie'))
   .catch(err => console.error('Erreur de connexion à MongoDB:', err));
 
