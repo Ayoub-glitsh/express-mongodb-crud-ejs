@@ -17,6 +17,12 @@
   <p style="color: #666;">Manage your products with Express + MongoDB + EJS</p>
 </div>
 
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/USERNAME/REPO/main/assets/demo.png" width="300"/>
+</p>
+
 ---
 
 ## 🛠️ Technologies
