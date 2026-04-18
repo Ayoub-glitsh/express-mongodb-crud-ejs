@@ -9,32 +9,12 @@
 
 ## 🛠️ Technologies
 
-<p align="center">
-  <!-- Node.js -->
-  <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-    <circle cx="12" cy="12" r="10" stroke="#339933" stroke-width="2"/>
-    <path d="M12 7v10M7 12h10" stroke="#339933" stroke-width="2" stroke-linecap="round"/>
-  </svg>
-  &nbsp;&nbsp;
-  <!-- Express -->
-  <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-    <rect x="3" y="3" width="18" height="18" rx="2" stroke="#000000" stroke-width="2"/>
-    <path d="M8 12h8M12 8v8" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-  </svg>
-  &nbsp;&nbsp;
-  <!-- MongoDB -->
-  <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-    <circle cx="12" cy="12" r="9" stroke="#47A248" stroke-width="2"/>
-    <ellipse cx="12" cy="12" rx="4" ry="9" stroke="#47A248" stroke-width="2"/>
-    <path d="M12 3v18M3 12h18" stroke="#47A248" stroke-width="2"/>
-  </svg>
-  &nbsp;&nbsp;
-  <!-- EJS -->
-  <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
-    <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#B4CA65" stroke-width="2" stroke-linejoin="round"/>
-    <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#B4CA65" stroke-width="2" stroke-linejoin="round"/>
-  </svg>
-</p>
+| Technology | Icon |
+| :---: | :---: |
+| **Node.js** | <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#339933" stroke-width="2"/><path d="M12 7v10M7 12h10" stroke="#339933" stroke-width="2" stroke-linecap="round"/></svg> |
+| **Express** | <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#000000" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#000000" stroke-width="2" stroke-linecap="round"/></svg> |
+| **MongoDB** | <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#47A248" stroke-width="2"/><ellipse cx="12" cy="12" rx="4" ry="9" stroke="#47A248" stroke-width="2"/><path d="M12 3v18M3 12h18" stroke="#47A248" stroke-width="2"/></svg> |
+| **EJS** | <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#B4CA65" stroke-width="2" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#B4CA65" stroke-width="2" stroke-linejoin="round"/></svg> |
 
 ---
 
