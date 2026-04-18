@@ -128,7 +128,12 @@ app.delete('/delete/:id', async (req, res) => {
   }
 });
 
-// Démarrage du serveur
-app.listen(PORT, () => {
-  console.log(`Serveur démarré sur http://localhost:${PORT}`);
-});
+// Démarrage du serveur (uniquement en local)
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`Serveur démarré sur http://localhost:${PORT}`);
+  });
+}
+
+// Export de l'application pour Vercel (Serverless)
+module.exports = app;
