@@ -5,7 +5,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="60" alt="Express"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="60" alt="MongoDB"/>
   <img width="60"  alt="image" src="https://github.com/user-attachments/assets/3000dbb5-f6e7-4153-b18c-393452f08a68" />
-
 </p>
 
 <p align="center">
@@ -25,11 +24,10 @@
 
 | Technology | Icon |
 | :---: | :---: |
-| **Node.js** | <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#339933" stroke-width="2"/><path d="M12 7v10M7 12h10" stroke="#339933" stroke-width="2" stroke-linecap="round"/></svg> |
-| **Express** | <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#000000" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#000000" stroke-width="2" stroke-linecap="round"/></svg> |
-| **MongoDB** | <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#47A248" stroke-width="2"/><ellipse cx="12" cy="12" rx="4" ry="9" stroke="#47A248" stroke-width="2"/><path d="M12 3v18M3 12h18" stroke="#47A248" stroke-width="2"/></svg> |
-| **EJS** | <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#B4CA65" stroke-width="2" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#B4CA65" stroke-width="2" stroke-linejoin="round"/></svg> |
-
+| **Node.js** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="60" alt="Node.js"/> |
+| **Express** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="60" alt="Express"/> |
+| **MongoDB** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="60" alt="MongoDB"/> |
+| **EJS** | <img width="60" alt="EJS" src="https://github.com/user-attachments/assets/3000dbb5-f6e7-4153-b18c-393452f08a68" /> |
 ---
 
 ## 📋 Features
